@@ -35,8 +35,41 @@ header {
 main,
 main p,
 main h1 {
-	text-align: center;
+	text-align: justify;
 	font-weight: 800;
+	padding: 1px 10%;
+}
+
+article {
+	background: ghostwhite;
+	border-style: solid;
+	border-color: darkslategray;
+	border-width: 1px;
+}
+
+.home {
+	width: auto;
+	display: block;
+	justify-content: center;
+	padding: 10px 12%;
+}
+
+.about {
+    width: auto;
+    display: block;
+    justify-content: center;
+    padding: 10px 12%;
+}
+
+.aboutheader1 {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.aboutimage1 {
+	padding: 10px;
+	height: 150px;
+	width: 150px;
 }
 
 /* Space Between Link Buttons in Header */
