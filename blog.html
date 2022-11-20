@@ -11,22 +11,35 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <script src="https://kit.fontawesome.com/69d4031207.js" crossorigin="anonymous"></script>
+
 </head>
   
 <body>
     <header>
-        <a class="logo"
-            href="index.html">
-            Jesse Alexander Photography
-        </a>    
-  
         <nav>
-            <ul class="navigate_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
+            <div class="navbar">
+                <a class="navbar-brand" href="index.html">Jesse Alexander Photography</a>
+                <button class="toggle-collapse">
+                    <i class="fas fa-align-center fa-lg"></i>
+                </button>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item">
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -38,7 +51,33 @@
         <p>- Jesse</p>
     </main>
 
+    <footer class="site-footer">
+		<div class="site-info">
+            <small>All content and photographs © 2022 <a href="https://jalexphotos.github.io">Jesse Alexander Photography</a></small>
+		</div><!-- close .site-info -->
+		<div class="social">
+			<ul class="socialul">
+			    <li class="socialli">
+                    <a href="https://www.instagram.com/jessej1s/" title="Follow Jesse on Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+			    <li class="socialli">
+                    <a href="https://www.facebook.com/photogbyjesse/" title="Follow Jesse on Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+			    <li class="socialli">
+                    <a href="https://twitter.com/jessej1s" title="Follow Jesse on Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>          
+			</ul>
+		</div>
+	</footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $('.toggle-collapse').click(function(){
+                $('.navbar-collapse').toggleClass("collapse");
+            })
+        });
+    </script>
 </body>
   
 </html>

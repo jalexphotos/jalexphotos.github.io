@@ -5,110 +5,159 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: "Montserrat", sans-serif;
+	color: rgb(0, 0, 0);
+	font-weight: 800;
 }
 
-/* Handles Navigation Appearance */
-header,
-.logo,
-.navigate_links,
-nav a {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size:3vmin;
-	color: darkslategray;
-	text-decoration: none;
-	text-transform: uppercase;
-	/* margin-right: auto; */
-	order: 3;
+body {
+	background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+	width: 90%;
 	margin-left: auto;
-}
-
-/* Handles Size of Header */
-header {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 30px 10%;
-	order: 1;
-}
-
-main,
-main p,
-main h1 {
-	text-align: justify;
+	margin-right: auto;
 	font-weight: 800;
-	padding: 1px 10%;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
 }
 
-article {
-	background: ghostwhite;
-	border-style: solid;
-	border-color: darkslategray;
-	border-width: 1px;
+.navbar-brand {
+	float: left;
+	text-decoration: none;
+	font-size: 19px;
+	padding: 1em 0.5em;
+	color: rgb(0, 0, 0);
+}
+
+.navbar-nav {
+	margin: 0%;
+}
+
+.navbar .navbar-nav .navbar-item {
+	display: inline;
+	list-style: none;
+	float: right;
+}
+
+.navbar-nav .navbar-item a {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 19px;
+	padding: 1em .5em;
+	color: rgb(0, 0, 0);
+}
+
+.navbar-nav .navbar-item a:hover {
+	text-decoration: underline;
+}
+
+.toggle-collapse {
+	float: right;
+	width: 45px;
+	height: 32px;
+	margin: 0.4em 0.7em;
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	cursor: pointer;
+	display: none;
+}
+
+.toggle-collapse:hover {
+	color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 760px) {
+	.navbar-brand {
+		font-size: 13px;
+		display: inline-block;
+		float: none;
+		padding: 1.2em 0.3em;
+	}
+	.toggle-collapse {
+		display: inline-block;
+	}
+	.navbar-nav {
+		color: rgb(0, 0, 0);
+		padding: 0%;
+	}
+
+	.navbar .navbar-nav .navbar-item {
+		display: block;
+		list-style: none;
+		float: none;
+	}
+
+	.navbar-collapse {
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		height: 0vh;
+		transition: all 499ms ease;
+	}
+
+	.collapse {
+		height: 100vh;
+	}
 }
 
 .home {
-	width: auto;
-	display: block;
-	justify-content: center;
-	padding: 10px 12%;
+	width: 90%;
+	display: inline-block;
+	padding: 2% 5%;
+	text-align: justify;
+	background-color: rgb(255, 255, 255);
 }
 
 .about {
-    width: auto;
-    display: block;
-    justify-content: center;
-    padding: 10px 12%;
-}
-
-.aboutheader1 {
-	text-decoration: underline;
-	text-transform: uppercase;
-}
-
-.aboutimage1 {
-	padding: 10px;
-	height: 150px;
-	width: 150px;
-}
-
-/* Space Between Link Buttons in Header */
-.navigate_links {
-	list-style: none;
-}
-
-.navigate_links li {
+	width: 90%;
 	display: inline-block;
-	padding: 0px 20px;
+	padding: 2% 5%;
+	text-align: justify;
 }
 
-/* Space Under Header Nav Buttons */
-.navigate_links li a {
-	transition: all .25s ease-in-out 0s;
+article {
+	border: 2px solid black;
 }
 
-/* Space just after Home button */
-.navigate_links li:nth-child(1) {
-	padding: 0px 20px 0px 0px;
+.aboutheader,
+.aboutimage,
+.abouttext {
+	display: block;
 }
 
-/* Hover Effect */
-.navigate_links li a:hover {
-	color: lightslategray;
-	border: 2px solid lightslategray;
-	box-shadow: 2px 2px 20px lightslategray;
-	border-radius: 4px;
-	margin: 10px;	
-	padding: 12px;
+.aboutheader {
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 25px;
+	text-align: center;
+	padding: .5em .5em;
 }
+
+.aboutimage {
+	height: 175px;
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .5em .5em;
+}
+
+.abouttext {
+	padding: .5em .5em;
+}
+
 
 /* Main Gallery Container */
 .container {
     width: auto;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
-    padding: 10px 12%;
+    padding: 5% 20%;
+	background-color: rgb(255, 255, 255);
 }
 
 /* Immediately Under Gallery Images */
@@ -122,4 +171,24 @@ article {
 .gallery img {
     width: 100%;
     height: auto;
+}
+
+footer,
+.sitefooter {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+.site-info,
+.social,
+.socialli {
+	display: inline-block;
+}
+
+.social {
+	float: right;
 }
