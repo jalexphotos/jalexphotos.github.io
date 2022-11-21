@@ -171,7 +171,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-caption a {
-  color: #4ae;
+  color: rgb(255, 255, 255);
 }
 
 .lb-data .lb-number {
