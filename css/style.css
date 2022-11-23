@@ -1,5 +1,4 @@
-@import url(
-	'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 * {
 	margin: 0px;
@@ -7,49 +6,46 @@
 	font-family: "Montserrat", sans-serif;
 	color: rgb(0, 0, 0);
 	font-weight: 800;
+	background-color: white;
 }
 
 body {
-	background-color: rgb(255, 255, 255);
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .navbar {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	font-weight: 800;
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
+	height: 8rem;
+	display: flex;
+	align-items: center;
 	text-transform: uppercase;
+	padding: 0 1rem;
 }
 
 .navbar-brand {
-	float: left;
 	text-decoration: none;
-	font-size: 19px;
-	padding: 1em 0.5em;
-	color: rgb(0, 0, 0);
+	font-size: 1.25em;
+	margin-right: auto;
 }
 
 .navbar-nav {
-	margin: 0%;
+	margin-left: 1rem;
+	flex-direction: row-reverse;
 }
 
 .navbar .navbar-nav .navbar-item {
 	display: inline;
 	list-style: none;
-	float: right;
+	padding: 0 1rem;
 }
 
 .navbar-nav .navbar-item a {
 	text-decoration: none;
-	display: inline-block;
-	font-size: 19px;
-	padding: 1em .5em;
-	color: rgb(0, 0, 0);
+	font-size: 1.25em;
 }
 
-.navbar-nav .navbar-item a:hover {
+.navbar-item:hover {
 	text-decoration: underline;
 }
 
@@ -77,9 +73,11 @@ body {
 		float: none;
 		padding: 1.2em 0.3em;
 	}
+
 	.toggle-collapse {
 		display: inline-block;
 	}
+
 	.navbar-nav {
 		color: rgb(0, 0, 0);
 		padding: 0%;
@@ -104,25 +102,14 @@ body {
 	}
 }
 
-.home {
-	width: 90%;
-	display: inline-block;
-	padding: 2% 5%;
-	text-align: justify;
-	background-color: rgb(255, 255, 255);
-}
-
-.about {
-	width: 90%;
-	display: inline-block;
-	padding: 2% 5%;
-	text-align: justify;
-}
-
-article {
+.home,
+.about,
+.article {
+	max-width: 75ch;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 75ch;
+	padding: 0 1rem;
+	text-align: justify;
 }
 
 .aboutheader,
@@ -154,47 +141,40 @@ article {
 
 /* Main Gallery Container */
 .container {
-    width: auto;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 20%;
-	background-color: rgb(255, 255, 255);
+	width: auto;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	padding: 5% 20%;
 }
 
 /* Immediately Under Gallery Images */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 15px;
 	row-gap: 15px;
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
-footer,
-.sitefooter {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+.site-footer {
+	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
-.site-info,
-.social,
+.site-info {
+	margin-right: auto;
+	font-size: .75rem;
+
+}
+
+.socialul,
 .socialli {
-	display: inline-block;
-}
-
-.social {
-	float: right;
-}
-
-.socialli {
-	padding: 5px;
+	display: inline;
+	list-style: none;
+	padding: 0 1rem;
 }
