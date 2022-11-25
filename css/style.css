@@ -165,7 +165,7 @@ body {
 .gallery-intro {
 	margin-left: auto;
 	margin-right: auto;
-	width: 75ch;
+	width: 60%;
 	padding: 2rem;
 }
 
@@ -204,7 +204,7 @@ article {
 
 /* Main Gallery Container */
 .container {
-    width: 95ch;
+    width: 70%;
 	margin-left: auto;
 	margin-right: auto;
     display: block;
