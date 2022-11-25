@@ -159,6 +159,7 @@ body {
 .about {
 	margin-left: auto;
 	margin-right: auto;
+	display: inline-block;
 	width: 75ch;
 	text-align: justify;
 	padding: 2rem;
