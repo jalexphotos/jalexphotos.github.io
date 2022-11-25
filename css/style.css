@@ -26,14 +26,14 @@ body {
 .navbar li {
     list-style-type: none;
     padding: 1rem;
+	text-transform: capitalize;
 }
 
 .navbar a {
     text-decoration: none;
-	text-transform: capitalize;
 }
 
-.navbar a:hover{
+.navbar li a:hover{
 	text-decoration: underline;
 }
 
