@@ -9,6 +9,62 @@
 	font-weight: 800;
 }
 
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	border: 1px red solid;
+}
+
+.navbar ul {
+	margin-left: auto;
+	margin-right: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+	border: 1px black solid;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.nav-brand {
+    flex: 1;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+        width: 100%;
+        text-align: center;         
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+/*
 .navbar {
 	width: 90%;
 	margin-left: auto;
@@ -99,20 +155,15 @@
 		height: 100vh;
 	}
 }
+*/
 
-.home {
-	width: 90%;
-	display: inline-block;
-	padding: 2% 5%;
-	text-align: justify;
-	background-color: rgb(255, 255, 255);
-}
-
+.home,
 .about {
-	width: 90%;
-	display: inline-block;
-	padding: 2% 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75ch;
 	text-align: justify;
+	padding: 2rem;
 }
 
 article {
@@ -130,9 +181,8 @@ article {
 .aboutheader {
 	text-transform: uppercase;
 	text-decoration: underline;
-	font-size: 25px;
+	font-size: 2rem;
 	text-align: center;
-	padding: .5em .5em;
 }
 
 .aboutimage {
@@ -173,12 +223,13 @@ article {
 
 footer,
 .sitefooter {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
+	display: inline-block;
 	align-items: center;
 	justify-content: center;
+	border: 1px black solid;
 }
 
 .site-info,
@@ -192,5 +243,5 @@ footer,
 }
 
 .socialli {
-	padding: 5px;
+	padding: .5em;
 }
