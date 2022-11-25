@@ -12,14 +12,14 @@
 body {
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
+	width: auto;
 }
 
 .navbar ul {
 	margin-left: auto;
 	margin-right: auto;
     display: flex;
-    width: 100%;
+    width: auto;
     align-items: center;
 }
 
@@ -47,7 +47,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -219,13 +219,13 @@ article {
 }
 
 .gallery img {
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
 footer,
 .sitefooter {
-	width: 100%;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
