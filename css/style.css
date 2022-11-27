@@ -165,8 +165,19 @@ a:hover {
 .gallery-intro {
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 80%;
 	padding: 2rem;
+}
+
+.home h1 {
+	display: flex;
+	justify-content: center;
+}
+
+.home p {
+	width: 75ch;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 article {
