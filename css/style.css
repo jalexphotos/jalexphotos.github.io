@@ -188,7 +188,8 @@ article {
 
 .aboutheader,
 .aboutimage,
-.abouttext {
+.abouttext,
+.hometext {
 	display: block;
 }
 
@@ -208,7 +209,8 @@ article {
 	padding: .5em .5em;
 }
 
-.abouttext {
+.abouttext,
+.hometext {
 	padding: .5em .5em;
 }
 
