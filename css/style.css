@@ -175,6 +175,7 @@ a:hover {
 }
 
 .home p {
+	max-width: 75ch;
 	margin-left: auto;
 	margin-right: auto;
 }
